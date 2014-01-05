@@ -7,11 +7,13 @@ package remove_array_element;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
+import java.awt.GridLayout;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class BorderLayoutDemo {
     public static boolean RIGHT_TO_LEFT = false;
@@ -33,11 +35,44 @@ public class BorderLayoutDemo {
         JButton jbnSampleButtons = new JButton("Button 1 (PAGE_START)");
         contentPane.add(jbnSampleButtons, BorderLayout.PAGE_START);
 
+        GridLayout ruudustik = new GridLayout(0,13,0, 0);
+      JPanel kaardikesed = new JPanel();
+      kaardikesed.setLayout(ruudustik);
+      JButton nuppudeformaat= new JButton("nuppudeformaat");
+      nuppudeformaat.setPreferredSize(new Dimension(0, 0));
+      nuppudeformaat=new JButton("Nupuke1");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke2");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke3");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke4");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke5");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke6");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke7");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke8");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke9");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke10");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke11");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke12");
+      kaardikesed.add(nuppudeformaat);
+      nuppudeformaat=new JButton("Nupuke13");
+      kaardikesed.add(nuppudeformaat);
+     // nuppudeformaat.setPreferredSize(new Dimension(0, 0));
+      kaardikesed.add(nuppudeformaat);
+      jbnSampleButtons.setPreferredSize(new Dimension(200, 100));
         
         
-        jbnSampleButtons = new JButton("Button 2 (CENTER)");
-        jbnSampleButtons.setPreferredSize(new Dimension(200, 100));
-        contentPane.add(jbnSampleButtons, BorderLayout.CENTER);
+        
+        contentPane.add(kaardikesed, BorderLayout.CENTER);
 
         
         
