@@ -41,7 +41,7 @@ public class BorderLayoutDemo {
 
         
         
-        
+         
         
         jbnSampleButtons = new JButton("Button 3 (LINE_START)");
         contentPane.add(jbnSampleButtons, BorderLayout.LINE_START);
