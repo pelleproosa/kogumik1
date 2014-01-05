@@ -5,9 +5,11 @@ package remove_array_element;
  */
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Insets;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -35,40 +37,122 @@ public class BorderLayoutDemo {
         JButton jbnSampleButtons = new JButton("Button 1 (PAGE_START)");
         contentPane.add(jbnSampleButtons, BorderLayout.PAGE_START);
 
-        GridLayout ruudustik = new GridLayout(0,13,0, 0);
+        
+        ImageIcon Kaart1 = new ImageIcon(
+        		"D:/temp/kaardid/2/joker/jokerb.png");
+        ImageIcon Kaart2 = new ImageIcon(
+                "D:/temp/kaardid/2/joker/jokerr.png");
+        ImageIcon Kaart3 = new ImageIcon(
+        		"D:/temp/kaardid/2/c/c10.png");
+        ImageIcon Kaart4 = new ImageIcon(
+        		"D:/temp/kaardid/2/c/cQ.png");
+        ImageIcon Kaart5 = new ImageIcon(
+        		"D:/temp/kaardid/2/c/cK.png");
+        ImageIcon Kaart6 = new ImageIcon(
+        		"D:/temp/kaardid/2/c/cA.png");
+        jbnSampleButtons.setSize(0, 0);
+        GridLayout ruudustik = new GridLayout(5,65,0,0);
+        ruudustik.equals(Kaart2);
       JPanel kaardikesed = new JPanel();
+      kaardikesed.setSize(0, 0);
       kaardikesed.setLayout(ruudustik);
       JButton nuppudeformaat= new JButton("nuppudeformaat");
       nuppudeformaat.setPreferredSize(new Dimension(0, 0));
+      int i=0;
+      String str="";
+      
+      while (i<65){
+    	  i++;
+    	  str=(""+i);
+    	  if(((i>57)&&(i<61))||(i==20)||(i==32)||(i==34)||(i==46)){
+    		  nuppudeformaat=new JButton(Kaart1);
+    		  if(i==20){
+    			  nuppudeformaat=new JButton(Kaart3);  
+    		  }
+    		  if(i==32){
+    			  nuppudeformaat=new JButton(Kaart4);
+    		  }
+    		  if(i==34){
+    			  nuppudeformaat=new JButton(Kaart5);
+    		  }
+    		  if(i==46){
+    			  nuppudeformaat=new JButton(Kaart6);
+    		  }
+    		  if(i==59){
+    			  nuppudeformaat=new JButton(Kaart2);
+    		  }
+    		  nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+              nuppudeformaat.setBorder (null);
+
+              kaardikesed.add(nuppudeformaat);
+    	  }else{
+    	  nuppudeformaat=new JButton(str);
+    	  nuppudeformaat.setBackground(Color.GRAY);
+    	  nuppudeformaat.setForeground(Color.GRAY);
+          nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+          nuppudeformaat.setBorder (null);
+          nuppudeformaat.setEnabled(false);
+          kaardikesed.add(nuppudeformaat);
+    	  }
+          
+          
+          
+      }/*
       nuppudeformaat=new JButton("Nupuke1");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke2");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke3");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke4");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke5");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke6");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke7");
+      nuppudeformaat=new JButton(Kaart2);
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke8");
+      nuppudeformaat=new JButton(Kaart1);
+     nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+     nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke9");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke10");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke11");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke12");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
       nuppudeformaat=new JButton("Nupuke13");
+      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
+      nuppudeformaat.setBorder (null);
       kaardikesed.add(nuppudeformaat);
-     // nuppudeformaat.setPreferredSize(new Dimension(0, 0));
-      kaardikesed.add(nuppudeformaat);
-      jbnSampleButtons.setPreferredSize(new Dimension(200, 100));
+      */
+
+      jbnSampleButtons.setPreferredSize(new Dimension(40, 40));
         
         
         
@@ -79,20 +163,20 @@ public class BorderLayoutDemo {
          
         
         jbnSampleButtons = new JButton("Button 3 (LINE_START)");
+        jbnSampleButtons.setPreferredSize(new Dimension(80, 80));
         contentPane.add(jbnSampleButtons, BorderLayout.LINE_START);
         
         
         
-        ImageIcon Kaart1 = new ImageIcon(
-                "D:/temp/kaardid/2/joker/jokerb.png");
-        jbnSampleButtons.setSize(50, 50);
+        jbnSampleButtons.setSize(40, 100);
         jbnSampleButtons = new JButton( Kaart1);
         
         
-        
+        jbnSampleButtons.setPreferredSize(new Dimension(10, 100));
         contentPane.add(jbnSampleButtons, BorderLayout.PAGE_END);
 
         jbnSampleButtons = new JButton("5 (LINE_END)");
+        jbnSampleButtons.setPreferredSize(new Dimension(80, 80));
         contentPane.add(jbnSampleButtons, BorderLayout.LINE_END);
     }
 
@@ -101,10 +185,10 @@ public class BorderLayoutDemo {
 
         JFrame frame = new JFrame("BorderLayout Source Demo");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         //Set up the content pane and add swing components to it
         addComponentsToPane(frame.getContentPane());
 
+        frame.setResizable(false);
         frame.pack();
         frame.setVisible(true);
     }
