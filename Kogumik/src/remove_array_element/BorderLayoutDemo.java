@@ -97,61 +97,7 @@ public class BorderLayoutDemo {
           
           
           
-      }/*
-      nuppudeformaat=new JButton("Nupuke1");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke2");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke3");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke4");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke5");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke6");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton(Kaart2);
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton(Kaart1);
-     nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-     nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke9");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke10");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke11");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke12");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      nuppudeformaat=new JButton("Nupuke13");
-      nuppudeformaat.setMargin (new Insets (0, 0, 0, 0));
-      nuppudeformaat.setBorder (null);
-      kaardikesed.add(nuppudeformaat);
-      */
-
+      }
       jbnSampleButtons.setPreferredSize(new Dimension(40, 40));
         
         
