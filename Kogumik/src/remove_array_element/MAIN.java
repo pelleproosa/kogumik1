@@ -17,7 +17,7 @@ public class MAIN {
 	// JFrameDemo.start(null);	
 		//	JInternalFrameDemo.start(null);	// Hea asi aken aknas ja veel...
 		//JWindowDemo.start(null); // raamideta aken
-		//JOptionPaneDemo.start(null); //Igasugu kinnitus, sisestus ja info dialoogaknad 
+		JOptionPaneDemo.start(null); //Igasugu kinnitus, sisestus ja info dialoogaknad 
 		//JlabelDemo.start(null);// labeli näide
 		//JTextFieldDemo.start(null);//teksti näide 1
 		//JTextFieldDemo2.start(null);//teksti näide 2   jututuba
@@ -39,7 +39,7 @@ public class MAIN {
 		//ImageTest.start(null);
 		//LabelDemo.start(null); // mitme pildi korraga kuvamine ja suuruste muutmine
 		//Coins.start(null);// Joonistab sekundi tagant random kohta aknas uue kopika backgroundi
-		BorderLayoutDemo.start(null);// nupud kogu aknas näide(nagu veebilehe progemine)
+		//BorderLayoutDemo.start(null);// nupud kogu aknas näide(nagu veebilehe progemine)
 		//NupudJaPildid.start(null);
 		//GridLayoutDemo.start(null);
 		
